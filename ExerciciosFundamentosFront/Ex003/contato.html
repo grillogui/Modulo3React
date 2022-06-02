@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="index.html"> Home </a>
+        </li>
+        <li>
+            <a href="cardapio.html"> Cardapio </a>
+        </li>
+        <li>
+            <a href="contato.html"> Contato </a>
+        </li>
+    </ul>
+    <h1 class="center">  contato  </h1>
+    <hr>
+
+    <div class="container">
+        <div>
+            <h2>dogão já</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <br>
+                <input type="text" id="nome" onkeyup= "validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="endereço">Endereço</label>
+                <br>
+                <input type="text" id="endereço" onkeyup= "validaEndereço()">
+                <div id="txtEndereço"></div>
+                <br>
+                <label for="pedido">Pedido</label>
+                <br>
+                <textarea name="pedido" id="pedido" cols="50" rows="10" onkeyup= "validaPedido()"></textarea>
+                <div id="txtPedido"></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Pedir</button>
+            </form>
+        </div>
+
+        <div class="ml-50">
+            <h2>Localização</h2>
+            <p>Av. Inajar de Souza, 1100 - Limão, São Paulo - SP, 02716-000</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4351.305755729402!2d-46.687089489907024!3d-23.496602722731318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5229957719e808c!2sDog%C3%A3o%20do%20Nego!5e0!3m2!1spt-BR!2sbr!4v1653062052062!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+    </div>
+    
+    <hr>
+
+    <footer>
+        <div class="end">
+          <a href="https://www.linkedin.com/in/guilherme-grillo">
+            <img class="tamlogors" src="assets/img/in.png" alt="logo linkedin">
+          </a>
+          <a href="https://github.com/grillogui">
+            <img class="tamlogors" src="assets/img/git.png" alt="logo github">
+          </a>
+        </div>
+        <p class="end">
+            Guilherme Grillo &copy
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
